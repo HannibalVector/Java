@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="weblib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/WebApp5/weblib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp5/weblib/jsp-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp5/weblib/c3p0-0.9.5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp5/weblib/derbyclient.jar!/" />
+      <root url="jar://$PROJECT_DIR$/WebApp5/weblib/mchange-commons-java-0.2.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

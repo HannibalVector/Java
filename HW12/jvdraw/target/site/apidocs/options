@@ -1,0 +1,22 @@
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/src/main/java:/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/target/generated-sources/annotations'
+-author
+-bottom
+'Copyright &#169; 2015 <a href="http://www.fer.unizg.hr">ZEMRIS, Fakultet elektrotehnike i računarstva,       Sveučilište u Zagrebu</a>. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'jvdraw 1.0 API'
+-linkoffline
+'http://docs.oracle.com/javase/8/docs/api' '/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'jvdraw 1.0 API'

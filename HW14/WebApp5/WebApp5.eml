@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/../out/test/WebApp5"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/src/test"/>
+	</contentEntry>
+	<lib name="JUnit4" scope="TEST"/>
+	<levels>
+		<level name="lib" value="project"/>
+		<level name="weblib" value="project"/>
+	</levels>
+</component>

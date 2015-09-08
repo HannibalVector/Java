@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+   <duplication lines="54" tokens="171">
+      <file line="118"
+            path="/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/src/main/java/hr/fer/zemris/java/hw12/jvdraw/geometricobjects/Circle.java"/>
+      <file line="71"
+            path="/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/src/main/java/hr/fer/zemris/java/hw12/jvdraw/geometricobjects/FilledCircle.java"/>
+      <codefragment><![CDATA[        return new Rectangle(center.x - radius, center.y - radius, 2 * radius, 2 * radius);
+    }
+
+    @Override
+    protected void populateProperties() {
+        properties = new ArrayList<>();
+        properties.add(new Property<Integer>() {
+            @Override
+            public String getName() {
+                return "Radius";
+            }
+
+            @Override
+            public void set(Integer value) {
+                setRadius(value);
+            }
+
+            @Override
+            public Integer get() {
+                return getRadius();
+            }
+        });
+
+        properties.add(new Property<Point>() {
+            @Override
+            public String getName() {
+                return "Center";
+            }
+
+            @Override
+            public void set(Point value) {
+                setCenter(value);
+            }
+
+            @Override
+            public Point get() {
+                return getCenter();
+            }
+        });
+
+        properties.add(new Property<String>() {
+            @Override
+            public String getName() {
+                return "Name";
+            }
+
+            @Override
+            public void set(String value) {
+                setName(value);
+            }
+
+            @Override
+            public String get() {
+                return Circle.this.getName();]]></codefragment>
+   </duplication>
+</pmd-cpd>

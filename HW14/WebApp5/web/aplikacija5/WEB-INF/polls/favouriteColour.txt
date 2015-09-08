@@ -1,0 +1,8 @@
+Glasanje za najdražu boju
+Koja vam je najdraža boja? Kliknite na link kako biste glasali!
+Žuta	http://lmgtfy.com/?q=yellow
+Narančasta	http://lmgtfy.com/?q=orange
+Crvena	http://lmgtfy.com/?q=red
+Ljubičasta	http://lmgtfy.com/?q=purple
+Plava	http://lmgtfy.com/?q=blue
+Zelena	http://lmgtfy.com/?q=green

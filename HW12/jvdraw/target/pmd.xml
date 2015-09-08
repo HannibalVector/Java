@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-06-06T06:35:14.320">
+<file name="/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/src/main/java/hr/fer/zemris/java/hw12/jvdraw/JDrawingCanvas.java">
+<violation beginline="11" endline="11" begincolumn="1" endcolumn="32" rule="UnusedImports" ruleset="Import Statements" package="hr.fer.zemris.java.hw12.jvdraw" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/imports.html#UnusedImports" priority="4">
+Avoid unused imports such as 'java.util.SimpleTimeZone'
+</violation>
+</file>
+<file name="/home/ilijan/faks/Java/domace zadace Idea/HW12-0177035204/jvdraw/src/main/java/hr/fer/zemris/java/hw12/jvdraw/JVDraw.java">
+<violation beginline="158" endline="159" begincolumn="23" endcolumn="21" rule="EmptyCatchBlock" ruleset="Empty Code" package="hr.fer.zemris.java.hw12.jvdraw" class="JVDraw" method="actionPerformed" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="weblib">
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/weblib/servlet-api.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/weblib/jsp-api.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/weblib/c3p0-0.9.5.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/weblib/derbyclient.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/weblib/mchange-commons-java-0.2.9.jar" />
+  </library>
+  <library name="lib">
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/mchange-commons-java-0.2.9.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/c3p0-0.9.5.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/derbyclient.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/jcommon-1.0.23.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/jfreechart-1.0.19.jar" />
+    <archive path="/home/ilijan/faks/Java/zadace_Idea/HW14-0177035204/WebApp5/web/aplikacija5/WEB-INF/lib/poi-3.12-20150511.jar" />
+  </library>
+</eclipse-userlibraries>
+

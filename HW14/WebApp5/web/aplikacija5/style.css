@@ -1,0 +1,93 @@
+h1 {
+    font-family: "Georgia";
+    font-style: italic;
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    font-family: "Arial";
+    text-alignment: center;
+    background: white;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    background: black;
+    font-family: "Courier New";
+    font-size: 18px;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: black;
+    color: white;
+    font-style: italic;
+}
+
+th, td {
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr:hover {
+    background: #DDF920;
+}
+
+ul.opcije {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ol.ankete {
+    color: black;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-style: italic;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+ul.opcije li, ol.ankete li {
+    color: white;
+}
+
+ul.opcije li:hover, ol.ankete li:hover {
+    color: black;
+}
+
+ol.ankete li a, ul.opcije li {
+    margin: 5px 0px;
+    padding: 5px;
+    display: block;
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+ol.ankete li a:hover, ul.opcije li:hover {
+    color: black;
+    background: #DDF920;
+}
+
+a {
+    color: black;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: square;
+}
+
+html {
+    background: #2c4860;
+}

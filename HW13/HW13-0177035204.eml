@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/HW13-0177035204"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$">
+		<testFolder url="file://$MODULE_DIR$/web/aplikacija2/WEB-INF/src/test/java"/>
+	</contentEntry>
+	<lib name="$MODULE_DIR$/weblib/jsp-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/weblib/jsp-api.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/weblib/servlet-api.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/weblib/servlet-api.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/web/aplikacija2/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/aplikacija2/WEB-INF/lib/javax.servlet.jsp.jstl-1.2.1.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/web/aplikacija2/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/aplikacija2/WEB-INF/lib/javax.servlet.jsp.jstl-api-1.2.1.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/web/aplikacija2/WEB-INF/lib/jcommon-1.0.23.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/aplikacija2/WEB-INF/lib/jcommon-1.0.23.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/web/aplikacija2/WEB-INF/lib/jfreechart-1.0.19.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/aplikacija2/WEB-INF/lib/jfreechart-1.0.19.jar!/"/>
+	</lib>
+	<lib name="$MODULE_DIR$/web/aplikacija2/WEB-INF/lib/poi-3.12-20150511.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/web/aplikacija2/WEB-INF/lib/poi-3.12-20150511.jar!/"/>
+	</lib>
+</component>
