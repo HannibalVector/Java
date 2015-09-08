@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">HW16-0177035204</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_calculus">Računanje</string>
+
+    <string name="perform_operation">Izračunaj rezultat odabrane operacije!</string>
+    <string name="enter_first_variable">Unesi prvu varijablu</string>
+    <string name="enter_second_variable">Unesi drugu varijablu</string>
+    <string name="calculate">Izračunaj</string>
+    <string name="btn_return">Vrati se</string>
+    <string name="call">Zovi pomoć</string>
+    <string name="open">Googlaj</string>
+    <string name="add">Zbroji</string>
+    <string name="subtract">Oduzmi</string>
+    <string name="multiply">Pomnoži</string>
+    <string name="divide">Podijeli</string>
+    <string name="error">Greška</string>
+    <string name="report">Izvještaj</string>
+
+    <string name="addition">Zbrajanje</string>
+    <string name="subtraction">Oduzimanje</string>
+    <string name="multiplication">Množenje</string>
+    <string name="division">Dijeljenje</string>
+    <string name="result_is">"Rezultat je "</string>
+    <string name="ok">OK</string>
+    <string name="enter_args_message">Unesite argumente za traženu operaciju.</string>
+</resources>

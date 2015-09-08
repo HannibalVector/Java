@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HostActivity">
+
+    <TextView android:text="@string/perform_operation"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etFirstVariable"
+        android:layout_width="200dp"
+        android:inputType="number"
+        android:hint="@string/enter_first_variable"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/etSecondVariable"
+        android:layout_width="200dp"
+        android:inputType="number"
+        android:hint="@string/enter_second_variable"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rgOperation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:id="@+id/rbAdd" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/subtract"
+            android:id="@+id/rbSubtract" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/multiply"
+            android:id="@+id/rbMultiply" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/divide"
+            android:id="@+id/rbDivide" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:textSize="40sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:text="@string/calculate"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnView"
+        android:text="@string/open"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnCall"
+        android:text="@string/call"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnReport"
+        android:text="@string/report"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:enabled="false" />
+
+</LinearLayout>
