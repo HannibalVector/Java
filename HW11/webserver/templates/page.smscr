@@ -1,0 +1,44 @@
+<head>
+    <title>{$= "title" "Default Title" @tparamGet $}</title>
+    <style>
+        body, ul, div {
+        width: 500px;
+        margin: auto;
+        }
+
+        h1, p, li, a, div {
+        color:white;
+        background:black;
+        }
+
+        p, li, a, div {
+        font-family: monospace;
+        font-size: 16px;
+        font-weight: bold;
+        float:left;
+        display: inline;
+        }
+
+        ul {
+        padding: 0;
+        float:right;
+        }
+
+        p {
+        margin: 5px 5px 5px 0;
+        }
+
+        li {
+        display: inline;
+        float: left;
+        margin: 2px 5px 2px 0;
+        }
+
+    </style>
+</head>
+<body>
+<h1>{$= "heading" "Default Heading" @tparamGet $}</h1>
+<p>{$= "menuName" "Menu" @tparamGet $}:</p>
+{$= "menu" "Items" @tparamGet $}
+{$= "body" "Default Body" @tparamGet $}
+</body>

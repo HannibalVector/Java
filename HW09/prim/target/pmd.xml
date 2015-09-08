@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-05-16T06:25:42.602">
+<file name="/home/ilijan/faks/Java/domace zadace Idea/HW09-0177035204/prim/src/main/java/hr/fer/zemris/java/gui/prim/PrimDemo.java">
+<violation beginline="123" endline="123" begincolumn="17" endcolumn="22" rule="AvoidBranchingStatementAsLastInLoop" ruleset="Basic" package="hr.fer.zemris.java.gui.prim" class="PrimDemo$PrimListModel" method="next" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/basic.html#AvoidBranchingStatementAsLastInLoop" priority="2">
+Avoid using a branching statement as the last in a loop.
+</violation>
+</file>
+</pmd>

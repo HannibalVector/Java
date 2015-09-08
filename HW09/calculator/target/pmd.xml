@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-05-16T06:42:21.731">
+<file name="/home/ilijan/faks/Java/domace zadace Idea/HW09-0177035204/calculator/src/main/java/hr/fer/zemris/java/gui/calc/CalculatorButtons.java">
+<violation beginline="44" endline="44" begincolumn="42" endcolumn="49" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$FunctionButton" variable="function" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'function'.
+</violation>
+<violation beginline="46" endline="46" begincolumn="42" endcolumn="56" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$FunctionButton" variable="inverseFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'inverseFunction'.
+</violation>
+<violation beginline="87" endline="87" begincolumn="24" endcolumn="28" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$DigitButton" variable="digit" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'digit'.
+</violation>
+<violation beginline="191" endline="191" begincolumn="52" endcolumn="66" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$BinaryOperationButton" variable="binaryOperation" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'binaryOperation'.
+</violation>
+<violation beginline="233" endline="233" begincolumn="52" endcolumn="59" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$BinaryFunctionButton" variable="function" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'function'.
+</violation>
+<violation beginline="235" endline="235" begincolumn="52" endcolumn="66" rule="UnusedPrivateField" ruleset="Unused Code" package="hr.fer.zemris.java.gui.calc" class="CalculatorButtons$BinaryFunctionButton" variable="inverseFunction" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.2.3/pmd-java/rules/java/unusedcode.html#UnusedPrivateField" priority="3">
+Avoid unused private fields such as 'inverseFunction'.
+</violation>
+</file>
+</pmd>

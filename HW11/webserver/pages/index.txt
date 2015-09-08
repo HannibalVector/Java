@@ -1,0 +1,5 @@
+title = Maj Pejdz
+heading = Hello, madafaka!
+menuName = Files
+menuDir = webroot
+body = <img src = "trippy2.gif" />

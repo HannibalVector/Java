@@ -1,0 +1,9 @@
+{$= "text/html" @setMimeType $}
+<head>
+<title>Error {$= "errorCode" "unknown" @tparamGet $}</title>
+</head>
+<body style = "width:500px; margin:auto;">
+<h1>Error {$= "errorCode" "unknown" @tparamGet $}</h1>
+<p>{$= "errorMessage" "unknown" @tparamGet $}</p>
+<img src="{$= "root" "" @tparamGet $}trippy.gif" />
+</body>

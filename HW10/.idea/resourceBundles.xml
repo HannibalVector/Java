@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_de.properties" />
+    <file url="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_en.properties" />
+    <file url="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_hr.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_de.properties" />
+      <file value="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_en.properties" />
+      <file value="file://$PROJECT_DIR$/jnotepadpp/src/main/java/hr/fer/zemris/java/hw10/jnotepadpp/localization/translation_hr.properties" />
+      <base-name>translation</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>
