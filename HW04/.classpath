@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src/main/java"/>
+	<classpathentry kind="src" path="src/test/java"/>
+	<classpathentry kind="lib" path="junit-4.7.jar"/>
+	<classpathentry kind="lib" path="lib/prikaz.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/HW04-0177035204/lib/prikaz-javadoc.zip!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="out/production/HW04-0177035204"/>
+</classpath>

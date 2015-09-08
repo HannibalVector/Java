@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component inherit-compiler-output="true" inheritJdk="true">
+	<output-test url="file://$MODULE_DIR$/out/test/HW04-0177035204"/>
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="junit-4.7.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/junit-4.7.jar!/"/>
+	</lib>
+	<lib name="prikaz.jar" scope="COMPILE">
+		<relative-module-cls project-related="jar://$PROJECT_DIR$/lib/prikaz.jar!/"/>
+		<relative-module-javadoc project-related="jar://$PROJECT_DIR$/lib/prikaz-javadoc.zip!/"/>
+	</lib>
+</component>

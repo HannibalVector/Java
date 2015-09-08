@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="prikaz">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/prikaz.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/prikaz-javadoc.zip!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

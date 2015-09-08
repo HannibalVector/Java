@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/crypto/crypto.iml" filepath="$PROJECT_DIR$/crypto/crypto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/linalg-impl/linalg-impl.iml" filepath="$PROJECT_DIR$/linalg-impl/linalg-impl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myshell/myshell.iml" filepath="$PROJECT_DIR$/myshell/myshell.iml" />
+    </modules>
+  </component>
+</project>
