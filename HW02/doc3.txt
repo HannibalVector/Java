@@ -1,0 +1,6 @@
+Parser works if no spaces are put between expressions inside tags.
+{$ FOR i1@sin"10"1.2 $}
+This is {$= ii@aa*3.22+10@tan$} sample text.
+This is sample text.
+{$ END $}
+This is sample text.

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>IntegerSequence.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03-0177035204</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw3</a> &gt; <span class="el_source">IntegerSequence.java</span></div><h1>IntegerSequence.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw3;
+
+import java.util.Iterator;
+
+/**
+ * Class represents a collection of integers which allows user to loop from specified integer
+ * to specified integer with given step.
+ * Created by ilijan on 4/1/15.
+ */
+public class IntegerSequence implements Iterable&lt;Integer&gt; {
+
+    /** Starting integer in the collection. */
+    private int start;
+
+    /** Ending integer in the collection. */
+    private int end;
+
+    /** Step. */
+    private int step;
+
+    /**
+     * Constructor initializes new collection of integers using starting and ending integer, and step.
+     * @param start     starting integer of the collection.
+     * @param end       ending integer of the collection.
+     * @param step      step of the collection.
+     */
+<span class="nc" id="L27">    public IntegerSequence(int start, int end, int step) {</span>
+<span class="nc bnc" id="L28" title="All 4 branches missed.">        if (start &lt; 0 || end &lt; 0) {</span>
+<span class="nc" id="L29">            throw new IllegalArgumentException(&quot;Starting and ending integer must be non-negative.&quot;);</span>
+        }
+<span class="nc bnc" id="L31" title="All 2 branches missed.">        if (step &lt; 1) {</span>
+<span class="nc" id="L32">            throw new IllegalArgumentException(&quot;Step must be positive integer.&quot;);</span>
+        }
+<span class="nc" id="L34">        this.start = start;</span>
+<span class="nc" id="L35">        this.end = end;</span>
+<span class="nc" id="L36">        this.step = step;</span>
+<span class="nc" id="L37">    }</span>
+
+    @Override
+    public Iterator&lt;Integer&gt; iterator() {
+<span class="nc" id="L41">        return new IntegerIterator();</span>
+    }
+
+    /**
+     * Private class is used to create iterators for the iterator() method in
+     * Iterable&lt;Integer&gt; interface which outer class implements.
+     */
+    private class IntegerIterator implements Iterator&lt;Integer&gt; {
+
+        /** Current number in iterator. */
+        private int currentNumber;
+
+        /**
+         * Default constructor initializes iterator to starting number of the collection.
+         */
+<span class="nc" id="L56">        private IntegerIterator() {</span>
+<span class="nc" id="L57">            currentNumber = start;</span>
+<span class="nc" id="L58">        }</span>
+
+        @Override
+        public boolean hasNext() {
+<span class="nc bnc" id="L62" title="All 2 branches missed.">            return currentNumber &lt;= end;</span>
+        }
+
+        @Override
+        public Integer next() {
+<span class="nc bnc" id="L67" title="All 2 branches missed.">            if(!hasNext()) {</span>
+<span class="nc" id="L68">                throw new IntegerSequenceException(&quot;No more integers left to iterate over.&quot;);</span>
+            }
+<span class="nc" id="L70">            int nextNumber = currentNumber;</span>
+<span class="nc" id="L71">            currentNumber += step;</span>
+<span class="nc" id="L72">            return nextNumber;</span>
+        }
+
+        @Override
+        public void remove() {
+<span class="nc" id="L77">            throw new UnsupportedOperationException(&quot;Cannot remove integer.&quot;);</span>
+        }
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

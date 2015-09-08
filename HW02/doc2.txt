@@ -1,0 +1,7 @@
+This example shows how escaping is handled by parser.
+\{$ this is just some regular text
+{$ FOR i 1 10 $}
+    This is for loop which contains echo tag {$= i j @sin "this is just \\
+    some string with escaping \". Now this is
+    a real end of the string\\ " $}
+{$ END $}

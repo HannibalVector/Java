@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>CStringTest.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03-0177035204</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw3</a> &gt; <span class="el_source">CStringTest.java</span></div><h1>CStringTest.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw3;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+/**
+ * Created by ilijan on 4/1/15.
+ */
+<span class="fc" id="L9">public class CStringTest {</span>
+
+<span class="fc" id="L11">    private static final char[] array = new char[] {'t', 'e', 'k', 's', 't'};</span>
+<span class="fc" id="L12">    private CString cstring = new CString(&quot;otorinolaringologija&quot;);</span>
+
+    @Test
+    public void testConstructorFromArray() {
+
+<span class="fc" id="L17">        cstring = new CString(array, 0, array.length);</span>
+<span class="fc" id="L18">        Assert.assertTrue(cstring.toString().equals(&quot;tekst&quot;));</span>
+
+<span class="fc" id="L20">        cstring = new CString(array, 0, 3);</span>
+<span class="fc" id="L21">        Assert.assertTrue(cstring.toString().equals(&quot;tek&quot;));</span>
+
+<span class="fc" id="L23">        cstring = new CString(array, 1, 4);</span>
+<span class="fc" id="L24">        Assert.assertTrue(cstring.toString().equals(&quot;ekst&quot;));</span>
+<span class="fc" id="L25">    }</span>
+
+    @Test (expected = CStringIndexOutOfBoundsException.class)
+    public void testWrongOffsetAndLength() {
+<span class="nc" id="L29">        cstring = new CString(array, 3, 4);</span>
+<span class="nc" id="L30">    }</span>
+
+    @Test
+    public void testConstructorFromString() {
+<span class="fc" id="L34">        String string = &quot;ovo je neki tekst&quot;;</span>
+<span class="fc" id="L35">        cstring = new CString(string);</span>
+<span class="fc" id="L36">        Assert.assertTrue(cstring.toString().equals(string));</span>
+<span class="fc" id="L37">    }</span>
+
+    @Test
+    public void testConstructorFromCString() {
+<span class="fc" id="L41">        cstring = new CString(&quot;neki tekst&quot;);</span>
+<span class="fc" id="L42">        CString cstring1 = new CString(cstring);</span>
+<span class="fc" id="L43">        Assert.assertTrue(cstring.toString().equals(cstring1.toString()));</span>
+
+<span class="fc" id="L45">        cstring1 = new CString(cstring.substring(0, 4));</span>
+<span class="fc" id="L46">        System.out.println(cstring1);</span>
+<span class="fc" id="L47">        Assert.assertTrue(cstring1.toString().equals(&quot;neki&quot;));</span>
+<span class="fc" id="L48">    }</span>
+
+    @Test
+    public void testLength() {
+<span class="fc" id="L52">        cstring = new CString(&quot;neki tekst&quot;);</span>
+<span class="fc" id="L53">        Assert.assertEquals(10, cstring.length());</span>
+
+<span class="fc" id="L55">        cstring = cstring.substring(5, 10);</span>
+<span class="fc" id="L56">        Assert.assertEquals(5, cstring.length());</span>
+<span class="fc" id="L57">    }</span>
+
+    @Test
+    public void testCharAt() {
+<span class="fc" id="L61">        cstring = new CString(&quot;blabla&quot;);</span>
+<span class="fc" id="L62">        Assert.assertEquals('a', cstring.charAt(2));</span>
+<span class="fc" id="L63">        Assert.assertEquals('b', cstring.charAt(3));</span>
+<span class="fc" id="L64">    }</span>
+
+    @Test (expected =  CStringIndexOutOfBoundsException.class)
+    public void testCharAtTooBigIndex() {
+<span class="nc" id="L68">        cstring = new CString(&quot;blabla&quot;);</span>
+<span class="nc" id="L69">        Assert.assertEquals('a', cstring.charAt(7));</span>
+<span class="nc" id="L70">    }</span>
+
+    @Test (expected =  CStringIndexOutOfBoundsException.class)
+    public void testCharAtNegativeIndex() {
+<span class="nc" id="L74">        cstring = new CString(&quot;blabla&quot;);</span>
+<span class="nc" id="L75">        Assert.assertEquals('a', cstring.charAt(-1));</span>
+<span class="nc" id="L76">    }</span>
+
+    @Test
+    public void testToCharArray() {
+<span class="fc" id="L80">        cstring = new CString(array, 0, array.length);</span>
+<span class="fc" id="L81">        char[] newArray = cstring.toCharArray();</span>
+<span class="fc bfc" id="L82" title="All 2 branches covered.">        for(int i = 0; i &lt; newArray.length; i++) {</span>
+<span class="fc" id="L83">            Assert.assertEquals(array[i], newArray[i]);</span>
+        }
+<span class="fc" id="L85">    }</span>
+
+    @Test
+    public void testIndexOf() {
+<span class="fc" id="L89">        Assert.assertEquals(3, cstring.indexOf('r'));</span>
+<span class="fc" id="L90">        Assert.assertEquals(7, cstring.indexOf('l'));</span>
+<span class="fc" id="L91">        Assert.assertEquals(-1, cstring.indexOf('z'));</span>
+<span class="fc" id="L92">    }</span>
+
+    @Test
+    public void testStartsWith() {
+<span class="fc" id="L96">        CString startString = new CString(&quot;otorino&quot;);</span>
+<span class="fc" id="L97">        CString endString = new CString(&quot;gologija&quot;);</span>
+<span class="fc" id="L98">        Assert.assertTrue(cstring.startsWith(startString));</span>
+<span class="fc" id="L99">        Assert.assertFalse(cstring.startsWith(endString));</span>
+<span class="fc" id="L100">    }</span>
+
+    @Test
+    public void testEndsWith() {
+<span class="fc" id="L104">        CString startString = new CString(&quot;otorino&quot;);</span>
+<span class="fc" id="L105">        CString endString = new CString(&quot;gologija&quot;);</span>
+<span class="fc" id="L106">        Assert.assertTrue(cstring.endsWith(endString));</span>
+<span class="fc" id="L107">        Assert.assertFalse(cstring.endsWith(startString));</span>
+<span class="fc" id="L108">    }</span>
+
+    @Test
+    public void testContains() {
+<span class="fc" id="L112">        CString containedString = new CString(&quot;otorino&quot;);</span>
+<span class="fc" id="L113">        CString noncontainedString = new CString(&quot;macka&quot;);</span>
+<span class="fc" id="L114">        Assert.assertTrue(cstring.contains(containedString));</span>
+<span class="fc" id="L115">        Assert.assertFalse(cstring.contains(noncontainedString));</span>
+<span class="fc" id="L116">    }</span>
+
+    @Test (expected = CStringIndexOutOfBoundsException.class)
+    public void testSubstringNegativeStart() {
+<span class="nc" id="L120">        cstring.substring(-1, 5);</span>
+<span class="nc" id="L121">    }</span>
+
+    @Test (expected = CStringIndexOutOfBoundsException.class)
+    public void testSubstringTooLargeEnd() {
+<span class="nc" id="L125">        cstring.substring(0, 50);</span>
+<span class="nc" id="L126">    }</span>
+
+    @Test (expected = IllegalArgumentException.class)
+    public void testSubstringEndSmallerThanStart() {
+<span class="nc" id="L130">        cstring.substring(5, 4);</span>
+<span class="nc" id="L131">    }</span>
+
+    @Test
+    public void testLeft() {
+<span class="fc" id="L135">        CString left = cstring.left(5);</span>
+<span class="fc" id="L136">        Assert.assertTrue(left.toString().equals(&quot;otori&quot;));</span>
+<span class="fc" id="L137">    }</span>
+
+    @Test
+    public void testRight() {
+<span class="fc" id="L141">        CString left = cstring.right(7);</span>
+<span class="fc" id="L142">        Assert.assertTrue(left.toString().equals(&quot;ologija&quot;));</span>
+<span class="fc" id="L143">    }</span>
+
+    @Test (expected = IllegalArgumentException.class)
+    public void testLeftNegativeNumberOfCharacters() {
+<span class="nc" id="L147">        cstring.left(-5);</span>
+<span class="nc" id="L148">    }</span>
+
+    @Test (expected = IllegalArgumentException.class)
+    public void testLeftTooLargeNumberOfCharacters() {
+<span class="nc" id="L152">        cstring.left(80);</span>
+<span class="nc" id="L153">    }</span>
+
+    @Test
+    public void testAdd() {
+<span class="fc" id="L157">        CString cstringToAdd = new CString(&quot; je jako duga rijec.&quot;);</span>
+<span class="fc" id="L158">        Assert.assertTrue(</span>
+<span class="fc" id="L159">                cstring.add(cstringToAdd).toString()</span>
+<span class="fc" id="L160">                        .equals(&quot;otorinolaringologija je jako duga rijec.&quot;)</span>
+        );
+<span class="fc" id="L162">    }</span>
+
+    @Test
+    public void testReplaceAllChars() {
+<span class="fc" id="L166">        Assert.assertTrue(</span>
+<span class="fc" id="L167">                cstring.replaceAll('o', 'x').toString()</span>
+<span class="fc" id="L168">                        .equals(&quot;xtxrinxlaringxlxgija&quot;)</span>
+        );
+<span class="fc" id="L170">    }</span>
+
+    @Test
+    public void testReplaceAllStrings() {
+<span class="fc" id="L174">        CString cstringOld = new CString(&quot;ri&quot;);</span>
+<span class="fc" id="L175">        CString cstringNew = new CString(&quot; cvjetic xoxo &quot;);</span>
+<span class="fc" id="L176">        Assert.assertTrue(</span>
+<span class="fc" id="L177">                cstring.replaceAll(cstringOld, cstringNew).toString()</span>
+<span class="fc" id="L178">                        .equals(&quot;oto cvjetic xoxo nola cvjetic xoxo ngologija&quot;)</span>
+        );
+<span class="fc" id="L180">    }</span>
+
+
+
+
+
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

@@ -1,0 +1,24 @@
+Testsuite: hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+
+Testcase: checkParsingEmptyString took 0.004 sec
+Testcase: checkNonPositiveDegreeOfPower took 0.001 sec
+Testcase: tryPassTwoRealPartsToParser took 0.001 sec
+Testcase: checkAngle took 0 sec
+Testcase: checkPower took 0 sec
+Testcase: checkRoots took 0.001 sec
+Testcase: checkFactoryFromImaginary took 0 sec
+Testcase: checkMagnitude took 0 sec
+Testcase: checkToString took 0.001 sec
+Testcase: checkParser took 0 sec
+Testcase: tryPassTwoImaginaryPartsToParser took 0 sec
+Testcase: checkFactoryFromReal took 0 sec
+Testcase: checkNegativeDegreeOfRoot took 0.001 sec
+Testcase: checkImaginaryPart took 0 sec
+Testcase: checkDivisionByZero took 0 sec
+Testcase: checkFactoryFromMagnitudeAndAngle took 0 sec
+Testcase: checkAdd took 0 sec
+Testcase: checkDiv took 0 sec
+Testcase: checkMul took 0 sec
+Testcase: checkSub took 0 sec
+Testcase: checkRealPart took 0 sec

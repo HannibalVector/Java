@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.2.3" timestamp="2015-04-01T18:53:07.358">
+<file name="hr/fer/zemris/java/tecaj/hw3/CString.java">
+<violation beginline="8" endline="388" begincolumn="28" endcolumn="1" rule="TooManyMethods" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw3" class="CString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="18" endline="18" begincolumn="13" endcolumn="23" rule="AvoidFieldNameMatchingMethodName" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" variable="length" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#AvoidFieldNameMatchingMethodName" priority="3">
+Field length has the same name as a method
+</violation>
+<violation beginline="26" endline="26" begincolumn="20" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="CString" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="45" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="CString" variable="length" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="26" endline="26" begincolumn="33" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="CString" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'offset' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithCopiedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="69" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithCopiedArray" variable="length" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="36" endline="36" begincolumn="57" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithCopiedArray" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'offset' is not assigned and could be declared final
+</violation>
+<violation beginline="41" endline="43" begincolumn="13" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithCopiedArray" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '41'-'43').
+</violation>
+<violation beginline="43" endline="43" begincolumn="13" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithCopiedArray" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '43'-'43').
+</violation>
+<violation beginline="55" endline="55" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="69" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="length" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="57" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'offset' is not assigned and could be declared final
+</violation>
+<violation beginline="55" endline="55" begincolumn="44" endcolumn="54" rule="ArrayIsStoredDirectly" ruleset="Security Code Guidelines" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/sunsecure.html#ArrayIsStoredDirectly" priority="3">
+The user-supplied array 'data' is stored directly.
+</violation>
+<violation beginline="66" endline="66" begincolumn="44" endcolumn="54" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="66" endline="66" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="initializeWithSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="69" endcolumn="78" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="length" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'length' is not assigned and could be declared final
+</violation>
+<violation beginline="85" endline="85" begincolumn="57" endcolumn="66" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'offset' is not assigned and could be declared final
+</violation>
+<violation beginline="86" endline="86" begincolumn="9" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="newCString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newCString' could be declared final
+</violation>
+<violation beginline="97" endline="97" begincolumn="44" endcolumn="54" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="97" endline="97" begincolumn="44" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="fromSharedArray" variable="data" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'data' is not assigned and could be declared final
+</violation>
+<violation beginline="105" endline="105" begincolumn="20" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="CString" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="20" endcolumn="35" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="CString" variable="original" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'original' is not assigned and could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="24" endcolumn="32" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="charAt" variable="index" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+<violation beginline="156" endline="158" begincolumn="13" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="toCharArray" variable="newCharArray" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newCharArray' (lines '156'-'158').
+</violation>
+<violation beginline="158" endline="158" begincolumn="13" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="toCharArray" variable="newCharArray" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newCharArray' (lines '158'-'158').
+</violation>
+<violation beginline="166" endline="166" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="toString" variable="stringBuilder" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'stringBuilder' could be declared final
+</violation>
+<violation beginline="180" endline="180" begincolumn="24" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="indexOf" variable="character" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'character' is not assigned and could be declared final
+</violation>
+<violation beginline="181" endline="184" begincolumn="17" endcolumn="25" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="indexOf" variable="index" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'index' (lines '181'-'184').
+</violation>
+<violation beginline="182" endline="182" begincolumn="14" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="indexOf" variable="i" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'finalIndex' could be declared final
+</violation>
+<violation beginline="182" endline="182" begincolumn="14" endcolumn="57" rule="OneDeclarationPerLine" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="indexOf" variable="i" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OneDeclarationPerLine" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="198" endline="198" begincolumn="31" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="startsWith" variable="start" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'start' is not assigned and could be declared final
+</violation>
+<violation beginline="208" endline="208" begincolumn="29" endcolumn="39" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="endsWith" variable="end" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'end' is not assigned and could be declared final
+</violation>
+<violation beginline="220" endline="220" begincolumn="32" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="containsAt" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'offset' is not assigned and could be declared final
+</violation>
+<violation beginline="220" endline="220" begincolumn="44" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="containsAt" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="222" endline="222" begincolumn="13" endcolumn="25" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="containsAt" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="227" endline="227" begincolumn="17" endcolumn="29" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="containsAt" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="240" endline="240" begincolumn="29" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="contains" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="243" endline="243" begincolumn="17" endcolumn="28" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="contains" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="261" endline="261" begincolumn="46" endcolumn="57" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="substring" variable="endIndex" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'endIndex' is not assigned and could be declared final
+</violation>
+<violation beginline="261" endline="261" begincolumn="30" endcolumn="43" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="substring" variable="startIndex" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'startIndex' is not assigned and could be declared final
+</violation>
+<violation beginline="281" endline="281" begincolumn="29" endcolumn="29" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="left" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="281" endline="281" begincolumn="25" endcolumn="29" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="left" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="292" endline="292" begincolumn="30" endcolumn="30" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="right" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="292" endline="292" begincolumn="26" endcolumn="30" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="right" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="302" endline="302" begincolumn="46" endcolumn="46" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="checkNumberOfCharacters" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="302" endline="302" begincolumn="42" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="checkNumberOfCharacters" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="317" endline="317" begincolumn="24" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="318" endline="321" begincolumn="13" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '318'-'321').
+</violation>
+<violation beginline="318" endline="325" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '318'-'325').
+</violation>
+<violation beginline="321" endline="321" begincolumn="13" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '321'-'321').
+</violation>
+<violation beginline="321" endline="325" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '321'-'325').
+</violation>
+<violation beginline="325" endline="325" begincolumn="13" endcolumn="48" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="add" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '325'-'325').
+</violation>
+<violation beginline="337" endline="337" begincolumn="45" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newChar" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'newChar' is not assigned and could be declared final
+</violation>
+<violation beginline="337" endline="337" begincolumn="31" endcolumn="42" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="oldChar" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'oldChar' is not assigned and could be declared final
+</violation>
+<violation beginline="338" endline="341" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '338'-'341').
+</violation>
+<violation beginline="338" endline="343" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '338'-'343').
+</violation>
+<violation beginline="341" endline="341" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '341'-'341').
+</violation>
+<violation beginline="341" endline="343" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '341'-'343').
+</violation>
+<violation beginline="343" endline="341" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '343'-'341').
+</violation>
+<violation beginline="343" endline="343" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '343'-'343').
+</violation>
+<violation beginline="357" endline="357" begincolumn="47" endcolumn="60" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newStr" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'newStr' is not assigned and could be declared final
+</violation>
+<violation beginline="357" endline="357" begincolumn="31" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="oldStr" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'oldStr' is not assigned and could be declared final
+</violation>
+<violation beginline="358" endline="358" begincolumn="13" endcolumn="30" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="numberOfOccurences" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like numberOfOccurences
+</violation>
+<violation beginline="358" endline="362" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="numberOfOccurences" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfOccurences' (lines '358'-'362').
+</violation>
+<violation beginline="362" endline="362" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="numberOfOccurences" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'numberOfOccurences' (lines '362'-'362').
+</violation>
+<violation beginline="366" endline="366" begincolumn="9" endcolumn="83" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newLength" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newLength' could be declared final
+</violation>
+<violation beginline="367" endline="375" begincolumn="21" endcolumn="81" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '367'-'375').
+</violation>
+<violation beginline="367" endline="380" begincolumn="17" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '367'-'380').
+</violation>
+<violation beginline="369" endline="387" begincolumn="13" endcolumn="33" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="positionInOldData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'positionInOldData' (lines '369'-'387').
+</violation>
+<violation beginline="374" endline="374" begincolumn="26" endcolumn="44" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="positionInNewString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like positionInNewString
+</violation>
+<violation beginline="374" endline="377" begincolumn="17" endcolumn="17" rule="AvoidArrayLoops" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#AvoidArrayLoops" priority="3">
+System.arraycopy is more efficient
+</violation>
+<violation beginline="375" endline="375" begincolumn="21" endcolumn="81" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '375'-'375').
+</violation>
+<violation beginline="375" endline="380" begincolumn="17" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '375'-'380').
+</violation>
+<violation beginline="380" endline="375" begincolumn="21" endcolumn="81" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '380'-'375').
+</violation>
+<violation beginline="380" endline="380" begincolumn="17" endcolumn="68" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="newData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'newData' (lines '380'-'380').
+</violation>
+<violation beginline="382" endline="387" begincolumn="17" endcolumn="35" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CString" method="replaceAll" variable="positionInOldData" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'positionInOldData' (lines '382'-'387').
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/CStringIndexOutOfBoundsException.java">
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="UncommentedEmptyConstructor" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="CStringIndexOutOfBoundsException" method="CStringIndexOutOfBoundsException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UncommentedEmptyConstructor" priority="3">
+Document empty constructor
+</violation>
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="CStringIndexOutOfBoundsException" method="CStringIndexOutOfBoundsException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="11" endline="11" begincolumn="52" endcolumn="52" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="CStringIndexOutOfBoundsException" method="CStringIndexOutOfBoundsException" variable="s" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="11" endline="11" begincolumn="45" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CStringIndexOutOfBoundsException" method="CStringIndexOutOfBoundsException" variable="s" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 's' is not assigned and could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="45" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="CStringIndexOutOfBoundsException" method="CStringIndexOutOfBoundsException" variable="index" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'index' is not assigned and could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/ComplexNumber.java">
+<violation beginline="8" endline="217" begincolumn="34" endcolumn="1" rule="TooManyMethods" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/codesize.html#TooManyMethods" priority="3">
+This class has too many methods, consider refactoring it.
+</violation>
+<violation beginline="11" endline="11" begincolumn="20" endcolumn="27" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'realPart' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="14" endline="14" begincolumn="20" endcolumn="32" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'imaginaryPart' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="21" endline="21" begincolumn="43" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="ComplexNumber" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'imaginaryPart' is not assigned and could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="26" endcolumn="40" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="ComplexNumber" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'realPart' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="42" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromReal" variable="real" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'real' is not assigned and could be declared final
+</violation>
+<violation beginline="40" endline="40" begincolumn="47" endcolumn="62" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromImaginary" variable="imaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'imaginary' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="73" endcolumn="84" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromMagnitudeAndAngle" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'angle' is not assigned and could be declared final
+</violation>
+<violation beginline="50" endline="50" begincolumn="55" endcolumn="70" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromMagnitudeAndAngle" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'magnitude' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="9" endcolumn="49" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromMagnitudeAndAngle" variable="real" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'real' could be declared final
+</violation>
+<violation beginline="52" endline="52" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="fromMagnitudeAndAngle" variable="imaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'imaginary' could be declared final
+</violation>
+<violation beginline="66" endline="66" begincolumn="40" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="parse" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="67" endline="67" begincolumn="9" endcolumn="68" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="parse" variable="parser" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'parser' could be declared final
+</violation>
+<violation beginline="108" endline="108" begincolumn="30" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="add" variable="numberToAdd" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'numberToAdd' is not assigned and could be declared final
+</violation>
+<violation beginline="109" endline="109" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="add" variable="real" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'real' could be declared final
+</violation>
+<violation beginline="110" endline="110" begincolumn="9" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="add" variable="imaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'imaginary' could be declared final
+</violation>
+<violation beginline="120" endline="120" begincolumn="30" endcolumn="59" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="sub" variable="numberToSubtract" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'numberToSubtract' is not assigned and could be declared final
+</violation>
+<violation beginline="121" endline="121" begincolumn="9" endcolumn="59" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="sub" variable="real" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'real' could be declared final
+</violation>
+<violation beginline="122" endline="122" begincolumn="9" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="sub" variable="imaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'imaginary' could be declared final
+</violation>
+<violation beginline="132" endline="132" begincolumn="30" endcolumn="53" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="mul" variable="multiplier" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'multiplier' is not assigned and could be declared final
+</violation>
+<violation beginline="133" endline="133" begincolumn="9" endcolumn="69" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="mul" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'magnitude' could be declared final
+</violation>
+<violation beginline="134" endline="134" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="mul" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'angle' could be declared final
+</violation>
+<violation beginline="144" endline="144" begincolumn="30" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="div" variable="divisor" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'divisor' is not assigned and could be declared final
+</violation>
+<violation beginline="148" endline="148" begincolumn="9" endcolumn="66" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="div" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'magnitude' could be declared final
+</violation>
+<violation beginline="149" endline="149" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="div" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'angle' could be declared final
+</violation>
+<violation beginline="159" endline="159" begincolumn="36" endcolumn="36" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="power" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="159" endline="159" begincolumn="32" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="power" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="163" endline="163" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="power" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'magnitude' could be declared final
+</violation>
+<violation beginline="164" endline="164" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="power" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'angle' could be declared final
+</violation>
+<violation beginline="175" endline="175" begincolumn="37" endcolumn="37" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like n
+</violation>
+<violation beginline="175" endline="175" begincolumn="33" endcolumn="37" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="n" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'n' is not assigned and could be declared final
+</violation>
+<violation beginline="179" endline="190" begincolumn="16" endcolumn="58" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'magnitude' (lines '179'-'190').
+</violation>
+<violation beginline="179" endline="179" begincolumn="9" endcolumn="58" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="magnitude" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'magnitude' could be declared final
+</violation>
+<violation beginline="180" endline="190" begincolumn="16" endcolumn="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'angle' (lines '180'-'190').
+</violation>
+<violation beginline="180" endline="180" begincolumn="9" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="angle" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'angle' could be declared final
+</violation>
+<violation beginline="181" endline="190" begincolumn="16" endcolumn="37" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'offset' (lines '181'-'190').
+</violation>
+<violation beginline="181" endline="181" begincolumn="9" endcolumn="37" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="offset" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'offset' could be declared final
+</violation>
+<violation beginline="183" endline="186" begincolumn="13" endcolumn="87" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="roots" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'roots' (lines '183'-'186').
+</violation>
+<violation beginline="186" endline="186" begincolumn="13" endcolumn="87" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="root" variable="roots" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'roots' (lines '186'-'186').
+</violation>
+<violation beginline="194" endline="194" begincolumn="23" endcolumn="42" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" variable="complexNumberBuilder" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like complexNumberBuilder
+</violation>
+<violation beginline="194" endline="194" begincolumn="9" endcolumn="64" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" variable="complexNumberBuilder" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'complexNumberBuilder' could be declared final
+</violation>
+<violation beginline="199" endline="199" begincolumn="26" endcolumn="44" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" variable="imaginaryPartString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like imaginaryPartString
+</violation>
+<violation beginline="199" endline="199" begincolumn="13" endcolumn="44" rule="OneDeclarationPerLine" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" variable="sign" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OneDeclarationPerLine" priority="4">
+Use one line for each declaration, it enhances code readability.
+</violation>
+<violation beginline="200" endline="204" begincolumn="13" endcolumn="13" rule="ConfusingTernary" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ConfusingTernary" priority="3">
+Avoid if (x != y) ..; else ..;
+</violation>
+<violation beginline="205" endline="205" begincolumn="44" endcolumn="44" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="213" endline="213" begincolumn="29" endcolumn="31" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumber" method="toString" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/ComplexNumberParser.java">
+<violation beginline="7" endline="180" begincolumn="14" endcolumn="1" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw3" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The class 'ComplexNumberParser' has a Cyclomatic Complexity of 3 (Highest = 10).
+</violation>
+<violation beginline="10" endline="10" begincolumn="20" endcolumn="25" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'string' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="23" endline="23" begincolumn="33" endcolumn="50" rule="LongVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" variable="SPECIAL_CHARACTERS" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#LongVariable" priority="3">
+Avoid excessively long variable names like SPECIAL_CHARACTERS
+</violation>
+<violation beginline="29" endline="29" begincolumn="32" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="ComplexNumberParser" variable="string" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'string' is not assigned and could be declared final
+</violation>
+<violation beginline="44" endline="44" begincolumn="13" endcolumn="47" rule="OnlyOneReturn" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="getComplexNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#OnlyOneReturn" priority="3">
+A method should have only one exit point, and that should be the last statement in the method
+</violation>
+<violation beginline="115" endline="115" begincolumn="9" endcolumn="52" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="read" variable="currentCharacter" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'currentCharacter' could be declared final
+</violation>
+<violation beginline="126" endline="146" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'realPart' (lines '126'-'146').
+</violation>
+<violation beginline="126" endline="154" begincolumn="16" endcolumn="27" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'realPart' (lines '126'-'154').
+</violation>
+<violation beginline="127" endline="138" begincolumn="21" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'imaginaryPart' (lines '127'-'138').
+</violation>
+<violation beginline="127" endline="154" begincolumn="16" endcolumn="32" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'imaginaryPart' (lines '127'-'154').
+</violation>
+<violation beginline="129" endline="154" begincolumn="17" endcolumn="31" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="hasReal" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'hasReal' (lines '129'-'154').
+</violation>
+<violation beginline="130" endline="154" begincolumn="17" endcolumn="36" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="hasImaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'hasImaginary' (lines '130'-'154').
+</violation>
+<violation beginline="133" endline="154" begincolumn="20" endcolumn="47" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="nextNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'nextNumber' (lines '133'-'154').
+</violation>
+<violation beginline="133" endline="133" begincolumn="13" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="nextNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'nextNumber' could be declared final
+</violation>
+<violation beginline="138" endline="138" begincolumn="21" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'imaginaryPart' (lines '138'-'138').
+</violation>
+<violation beginline="138" endline="154" begincolumn="21" endcolumn="46" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="imaginaryPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'imaginaryPart' (lines '138'-'154').
+</violation>
+<violation beginline="139" endline="154" begincolumn="21" endcolumn="39" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="hasImaginary" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'hasImaginary' (lines '139'-'154').
+</violation>
+<violation beginline="146" endline="146" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DD'-anomaly for variable 'realPart' (lines '146'-'146').
+</violation>
+<violation beginline="146" endline="154" begincolumn="21" endcolumn="41" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="realPart" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'realPart' (lines '146'-'154').
+</violation>
+<violation beginline="147" endline="154" begincolumn="21" endcolumn="34" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="parse" variable="hasReal" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'DU'-anomaly for variable 'hasReal' (lines '147'-'154').
+</violation>
+<violation beginline="161" endline="179" begincolumn="13" endcolumn="5" rule="CyclomaticComplexity" ruleset="Code Size" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="getNextNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/codesize.html#CyclomaticComplexity" priority="3">
+The method 'getNextNumber' has a Cyclomatic Complexity of 10.
+</violation>
+<violation beginline="162" endline="162" begincolumn="9" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="getNextNumber" variable="nextNumberBuilder" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'nextNumberBuilder' could be declared final
+</violation>
+<violation beginline="176" endline="176" begincolumn="38" endcolumn="40" rule="AppendCharacterWithChar" ruleset="String and StringBuffer" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParser" method="getNextNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/strings.html#AppendCharacterWithChar" priority="3">
+Avoid appending characters as strings in StringBuffer.append.
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/ComplexNumberParserException.java">
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="UncommentedEmptyConstructor" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParserException" method="ComplexNumberParserException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UncommentedEmptyConstructor" priority="3">
+Document empty constructor
+</violation>
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParserException" method="ComplexNumberParserException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="11" endline="11" begincolumn="41" endcolumn="54" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="ComplexNumberParserException" method="ComplexNumberParserException" variable="message" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/IntegerSequence.java">
+<violation beginline="13" endline="13" begincolumn="17" endcolumn="21" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" variable="start" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'start' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="16" endline="16" begincolumn="17" endcolumn="19" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" variable="end" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'end' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="19" endline="19" begincolumn="17" endcolumn="20" rule="ImmutableField" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" variable="step" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#ImmutableField" priority="3">
+Private field 'step' could be made final; it is only initialized in the declaration or constructor.
+</violation>
+<violation beginline="27" endline="27" begincolumn="39" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" method="IntegerSequence" variable="end" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'end' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="28" endcolumn="36" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" method="IntegerSequence" variable="start" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'start' is not assigned and could be declared final
+</violation>
+<violation beginline="27" endline="27" begincolumn="48" endcolumn="55" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" method="IntegerSequence" variable="step" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'step' is not assigned and could be declared final
+</violation>
+<violation beginline="31" endline="31" begincolumn="20" endcolumn="20" rule="AvoidLiteralsInIfCondition" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" method="IntegerSequence" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#AvoidLiteralsInIfCondition" priority="3">
+Avoid using Literals in Conditional Statements
+</violation>
+<violation beginline="41" endline="41" begincolumn="16" endcolumn="36" rule="AccessorClassGeneration" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence" method="iterator" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#AccessorClassGeneration" priority="3">
+Avoid instantiation through private constructors from outside of the constructors class.
+</violation>
+<violation beginline="70" endline="70" begincolumn="13" endcolumn="42" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequence$IntegerIterator" method="next" variable="nextNumber" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'nextNumber' could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/IntegerSequenceException.java">
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="UncommentedEmptyConstructor" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequenceException" method="IntegerSequenceException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UncommentedEmptyConstructor" priority="3">
+Document empty constructor
+</violation>
+<violation beginline="8" endline="9" begincolumn="12" endcolumn="5" rule="CallSuperInConstructor" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequenceException" method="IntegerSequenceException" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#CallSuperInConstructor" priority="3">
+It is a good practice to call super() in a constructor
+</violation>
+<violation beginline="11" endline="11" begincolumn="37" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3" class="IntegerSequenceException" method="IntegerSequenceException" variable="message" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'message' is not assigned and could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/demo/CStringDemo.java">
+<violation beginline="9" endline="35" begincolumn="26" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="11" endline="11" begincolumn="29" endcolumn="41" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="11" endline="11" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="9" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="abcd" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'abcd' could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="9" endcolumn="43" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="end" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'end' could be declared final
+</violation>
+<violation beginline="14" endline="14" begincolumn="9" endcolumn="41" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="start" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'start' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="9" endcolumn="48" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="nesto" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'nesto' could be declared final
+</violation>
+<violation beginline="16" endline="16" begincolumn="9" endcolumn="47" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="svasta" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'svasta' could be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="CStringDemo" method="main" variable="novi" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'novi' could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/demo/ComplexNumberDemo.java">
+<violation beginline="9" endline="27" begincolumn="32" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="10" endline="10" begincolumn="29" endcolumn="41" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="10" endline="10" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="11" endline="11" begincolumn="16" endcolumn="16" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="s" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like s
+</violation>
+<violation beginline="11" endline="11" begincolumn="9" endcolumn="35" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="s" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+<violation beginline="12" endline="12" begincolumn="9" endcolumn="54" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="complex" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'complex' could be declared final
+</violation>
+<violation beginline="17" endline="17" begincolumn="9" endcolumn="74" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="newComplex" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'newComplex' could be declared final
+</violation>
+<violation beginline="21" endline="21" begincolumn="23" endcolumn="24" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c1" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like c1
+</violation>
+<violation beginline="21" endline="21" begincolumn="9" endcolumn="50" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c1" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'c1' could be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="23" endcolumn="24" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c2" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like c2
+</violation>
+<violation beginline="22" endline="22" begincolumn="9" endcolumn="57" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c2" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'c2' could be declared final
+</violation>
+<violation beginline="23" endline="23" begincolumn="23" endcolumn="24" rule="ShortVariable" ruleset="Naming" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c3" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/naming.html#ShortVariable" priority="3">
+Avoid variables with short names like c3
+</violation>
+<violation beginline="23" endline="24" begincolumn="9" endcolumn="44" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="ComplexNumberDemo" method="main" variable="c3" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'c3' could be declared final
+</violation>
+</file>
+<file name="hr/fer/zemris/java/tecaj/hw3/demo/IntegerSequenceDemo.java">
+<violation beginline="10" endline="22" begincolumn="34" endcolumn="1" rule="UseUtilityClass" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseUtilityClass" priority="3">
+All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+</violation>
+<violation beginline="12" endline="12" begincolumn="29" endcolumn="41" rule="UseVarargs" ruleset="Design" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/design.html#UseVarargs" priority="4">
+Consider using varargs for methods or constructors which take an array the last parameter.
+</violation>
+<violation beginline="12" endline="16" begincolumn="17" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'i' (lines '12'-'16').
+</violation>
+<violation beginline="12" endline="16" begincolumn="17" endcolumn="51" rule="DataflowAnomalyAnalysis" ruleset="Controversial" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="j" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/controversial.html#DataflowAnomalyAnalysis" priority="5">
+Found 'UR'-anomaly for variable 'j' (lines '12'-'16').
+</violation>
+<violation beginline="12" endline="12" begincolumn="29" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="args" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#MethodArgumentCouldBeFinal" priority="3">
+Parameter 'args' is not assigned and could be declared final
+</violation>
+<violation beginline="13" endline="13" begincolumn="9" endcolumn="61" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="range" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'range' could be declared final
+</violation>
+<violation beginline="14" endline="14" begincolumn="13" endcolumn="17" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="i" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'i' could be declared final
+</violation>
+<violation beginline="15" endline="15" begincolumn="17" endcolumn="21" rule="LocalVariableCouldBeFinal" ruleset="Optimization" package="hr.fer.zemris.java.tecaj.hw3.demo" class="IntegerSequenceDemo" method="main" variable="j" externalInfoUrl="http://pmd.sourceforge.net/snapshot/pmd-java/rules/java/optimizations.html#LocalVariableCouldBeFinal" priority="3">
+Local variable 'j' could be declared final
+</violation>
+</file>
+</pmd>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ComplexNumberParser.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03-0177035204</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw3</a> &gt; <span class="el_source">ComplexNumberParser.java</span></div><h1>ComplexNumberParser.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw3;
+
+/**
+ * Class implements parser for objects of class {@link ComplexNumber}.
+ * Created by ilijan on 3/30/15.
+ */
+public final class ComplexNumberParser {
+
+    /** String to be parsed */
+    private String string;
+
+    /** Current position in string. */
+    private int currentPosition;
+
+    /** Special characters that represent signs. */
+    private static final String SIGNS = &quot;+-&quot;;
+
+    /** Special character that represents imaginary unit.
+     * Declared as {@code String} for convenience. */
+    private static final String IMAGINARY_UNIT = &quot;i&quot;;
+
+    /** String represent all special characters in parsing complex numbers. */
+    private static final String SPECIAL_CHARACTERS = &quot;+-i&quot;;
+
+    /**
+     * Constructor initializes new {@code ComplexNumberParser} using string to be parsed as input.
+     * @param string    string to be parsed.
+     */
+<span class="fc" id="L29">    public ComplexNumberParser(String string) {</span>
+<span class="fc" id="L30">        this.string = string;</span>
+<span class="fc" id="L31">    }</span>
+
+    /**
+     * Method that parses complex number from stored string.
+     * @return  complex number of type {@link ComplexNumber} parsed from string
+     *          input by constructor {code ComplexNumberParser(String string)}.
+     */
+    public ComplexNumber getComplexNumber() {
+<span class="fc" id="L39">        skipSpaces();</span>
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (isEndOfString()) {</span>
+<span class="fc" id="L41">            throw new IllegalArgumentException(&quot;Trying to parse empty string.&quot;);</span>
+        }
+<span class="fc bfc" id="L43" title="All 2 branches covered.">        if (string.equals(IMAGINARY_UNIT)) {</span>
+<span class="fc" id="L44">            return new ComplexNumber(0.0, 1.0);</span>
+        }
+<span class="fc" id="L46">        return parse();</span>
+    }
+
+    /**
+     * Returns current character in string, declared as string for convenience.
+     * @return  current character.
+     * @throws  ComplexNumberParserException    if reading is attempted after the end of string is reached.
+     */
+    private String currentCharacter() {
+<span class="pc bpc" id="L55" title="1 of 2 branches missed.">        if (isEndOfString()) {</span>
+<span class="nc" id="L56">            throw new ComplexNumberParserException(&quot;Trying to read after the end of string.&quot;);</span>
+        }
+<span class="fc" id="L58">        return string.substring(currentPosition, currentPosition + 1);</span>
+    }
+
+    /**
+     * Returns previous character in string, declared as string for convenience.
+     * @return  previous character in string.
+     * @throws  ComplexNumberParserException    if reading is attempted before the beginning of string
+     *                                          (if current position in string is &lt;= 0).
+     */
+    private String previousCharacter() {
+<span class="pc bpc" id="L68" title="1 of 2 branches missed.">        if (!hasPrevious()) {</span>
+<span class="nc" id="L69">            throw new ComplexNumberParserException(&quot;Trying to read before the beginning of string.&quot;);</span>
+        }
+<span class="fc" id="L71">        return string.substring(currentPosition - 1, currentPosition);</span>
+    }
+
+    /**
+     * Checks if end of string is reached.
+     * @return  {@code true} if end of string is reached, {@code false} otherwise.
+     */
+    private boolean isEndOfString() {
+<span class="fc bfc" id="L79" title="All 2 branches covered.">        return currentPosition == string.length();</span>
+    }
+
+    /**
+     * Checks if string has character at previous position.
+     * @return  {@code true} if end of string has previous character, {@code false} otherwise.
+     */
+    private boolean hasPrevious() {
+<span class="pc bpc" id="L87" title="1 of 2 branches missed.">        return currentPosition &gt; 0;</span>
+    }
+
+    /**
+     * Skips one position in string.
+     */
+    private void skipOne() {
+<span class="fc" id="L94">        currentPosition++;</span>
+<span class="fc" id="L95">    }</span>
+
+    /**
+     * Skips all spaces in string, as defined by private constant {@code spaces}.
+     */
+    private void skipSpaces() {
+<span class="fc bfc" id="L101" title="All 2 branches covered.">        while(!isEndOfString()) {</span>
+<span class="fc bfc" id="L102" title="All 2 branches covered.">            if(currentCharacter().equals(&quot; &quot;)) {</span>
+<span class="fc" id="L103">                skipOne();</span>
+            } else {
+                break;
+            }
+        }
+<span class="fc" id="L108">    }</span>
+
+    /**
+     * Reads one character from string, and moves one position forward.
+     * @return  current character in string.
+     */
+    private String read() {
+<span class="fc" id="L115">        String currentCharacter = currentCharacter();</span>
+<span class="fc" id="L116">        currentPosition++;</span>
+
+<span class="fc" id="L118">        return currentCharacter;</span>
+    }
+
+    /**
+     * Parses string to {@link ComplexNumber}.
+     * @return complex number parsed from string.
+     */
+    private ComplexNumber parse() {
+<span class="fc" id="L126">        double realPart = 0;</span>
+<span class="fc" id="L127">        double imaginaryPart = 0;</span>
+
+<span class="fc" id="L129">        boolean hasReal = false;</span>
+<span class="fc" id="L130">        boolean hasImaginary = false;</span>
+
+<span class="fc bfc" id="L132" title="All 2 branches covered.">        while (!isEndOfString()) {</span>
+<span class="fc" id="L133">            double nextNumber = getNextNumber();</span>
+<span class="fc bfc" id="L134" title="All 4 branches covered.">            if (!isEndOfString() &amp;&amp; currentCharacter().equals(IMAGINARY_UNIT)) {</span>
+<span class="fc bfc" id="L135" title="All 2 branches covered.">                if (hasImaginary) {</span>
+<span class="fc" id="L136">                    throw new ComplexNumberParserException(&quot;Two imaginary parts supplied.&quot;);</span>
+                } else {
+<span class="fc" id="L138">                    imaginaryPart = nextNumber;</span>
+<span class="fc" id="L139">                    hasImaginary = true;</span>
+<span class="fc" id="L140">                    skipOne();</span>
+                }
+            } else {
+<span class="fc bfc" id="L143" title="All 2 branches covered.">                if (hasReal) {</span>
+<span class="fc" id="L144">                    throw new ComplexNumberParserException(&quot;Two real parts supplied.&quot;);</span>
+                } else {
+<span class="fc" id="L146">                    realPart = nextNumber;</span>
+<span class="fc" id="L147">                    hasReal = true;</span>
+                }
+            }
+<span class="fc" id="L150">            skipSpaces();</span>
+<span class="fc" id="L151">        }</span>
+
+<span class="fc" id="L153">        return new ComplexNumber(realPart, imaginaryPart);</span>
+    }
+
+    /**
+     * Method reads string until reaches special character or end of string,
+     * and gets next real number from string.
+     * @return  next real number read from string.
+     */
+    private double getNextNumber() {
+<span class="fc" id="L162">        StringBuilder nextNumberBuilder = new StringBuilder();</span>
+<span class="fc" id="L163">        skipSpaces();</span>
+<span class="fc bfc" id="L164" title="All 2 branches covered.">        if(SIGNS.contains(currentCharacter())) {</span>
+<span class="fc" id="L165">            nextNumberBuilder.append(read());</span>
+        }
+<span class="fc" id="L167">        skipSpaces();</span>
+<span class="fc bfc" id="L168" title="All 2 branches covered.">        while (!isEndOfString()) {</span>
+<span class="fc bfc" id="L169" title="All 2 branches covered.">            if (SPECIAL_CHARACTERS.contains(currentCharacter()) &amp;&amp;</span>
+<span class="pc bpc" id="L170" title="1 of 6 branches missed.">                    !(SIGNS.contains(currentCharacter()) &amp;&amp; hasPrevious() &amp;&amp; previousCharacter().toUpperCase().equals(&quot;E&quot;))) {</span>
+<span class="fc" id="L171">                break;</span>
+            }
+<span class="fc" id="L173">            nextNumberBuilder.append(read());</span>
+        }
+<span class="fc bfc" id="L175" title="All 6 branches covered.">        if (!isEndOfString() &amp;&amp; currentCharacter().equals(IMAGINARY_UNIT) &amp;&amp; SIGNS.contains(nextNumberBuilder.toString())) {</span>
+<span class="fc" id="L176">            nextNumberBuilder.append(&quot;1&quot;);</span>
+        }
+<span class="fc" id="L178">        return Double.parseDouble(nextNumberBuilder.toString());</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

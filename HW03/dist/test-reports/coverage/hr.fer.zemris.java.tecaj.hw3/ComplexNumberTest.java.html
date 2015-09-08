@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>ComplexNumberTest.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">HW03-0177035204</a> &gt; <a href="index.source.html" class="el_package">hr.fer.zemris.java.tecaj.hw3</a> &gt; <span class="el_source">ComplexNumberTest.java</span></div><h1>ComplexNumberTest.java</h1><pre class="source lang-java linenums">package hr.fer.zemris.java.tecaj.hw3;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+/**
+ * Created by ilijan on 4/1/15.
+ */
+<span class="fc" id="L9">public class ComplexNumberTest {</span>
+
+    private static final double EPSILON = 1e-10;
+
+    @Test
+    public void checkRealPart() {
+<span class="fc" id="L15">        ComplexNumber z = new ComplexNumber(1.2, 3.4);</span>
+<span class="fc" id="L16">        Assert.assertEquals(1.2, z.getReal(), EPSILON);</span>
+<span class="fc" id="L17">    }</span>
+
+    @Test
+    public void checkImaginaryPart() {
+<span class="fc" id="L21">        ComplexNumber z = new ComplexNumber(1.2, 3.4);</span>
+<span class="fc" id="L22">        Assert.assertEquals(3.4, z.getImaginary(), EPSILON);</span>
+<span class="fc" id="L23">    }</span>
+
+    @Test
+    public void checkMagnitude() {
+<span class="fc" id="L27">        ComplexNumber z = new ComplexNumber(1.2, 3.4);</span>
+<span class="fc" id="L28">        Assert.assertEquals(Math.sqrt(13), z.getMagnitude(), EPSILON);</span>
+<span class="fc" id="L29">    }</span>
+
+    @Test
+    public void checkAngle() {
+<span class="fc" id="L33">        ComplexNumber z = new ComplexNumber(1.2, 3.4);</span>
+<span class="fc" id="L34">        Assert.assertEquals(Math.atan2(3.4, 1.2), z.getAngle(), EPSILON);</span>
+<span class="fc" id="L35">    }</span>
+
+    @Test
+    public void checkFactoryFromImaginary() {
+<span class="fc" id="L39">        ComplexNumber z = ComplexNumber.fromImaginary(5.7);</span>
+<span class="fc" id="L40">        checkComplexNumber(0, 5.7, z);</span>
+<span class="fc" id="L41">    }</span>
+
+    @Test
+    public void checkFactoryFromReal() {
+<span class="fc" id="L45">        ComplexNumber z = ComplexNumber.fromReal(2.1);</span>
+<span class="fc" id="L46">        checkComplexNumber(2.1, 0, z);</span>
+<span class="fc" id="L47">    }</span>
+
+    private void checkComplexNumber(double realPart, double imaginaryPart, ComplexNumber z) {
+<span class="fc" id="L50">        Assert.assertEquals(realPart, z.getReal(), EPSILON);</span>
+<span class="fc" id="L51">        Assert.assertEquals(imaginaryPart, z.getImaginary(), EPSILON);</span>
+<span class="fc" id="L52">    }</span>
+
+    @Test
+    public void checkFactoryFromMagnitudeAndAngle() {
+<span class="fc" id="L56">        ComplexNumber z = ComplexNumber.fromMagnitudeAndAngle(5.28, 16.3);</span>
+<span class="fc" id="L57">        Assert.assertEquals(5.28, z.getMagnitude(), EPSILON);</span>
+<span class="fc" id="L58">        double standardAngle = 16.3 - 2*Math.PI*Math.floor(16.3/(2*Math.PI)) - 2*Math.PI;</span>
+<span class="fc" id="L59">        Assert.assertEquals(standardAngle, z.getAngle(), EPSILON);</span>
+<span class="fc" id="L60">    }</span>
+
+    @Test
+    public void checkParser() {
+<span class="fc" id="L64">        compareStringAndNumber(&quot;+2.5-2i&quot;, 2.5, -2);</span>
+<span class="fc" id="L65">        compareStringAndNumber(&quot;i&quot;, 0, 1);</span>
+<span class="fc" id="L66">        compareStringAndNumber(&quot;  i&quot;, 0, 1);</span>
+<span class="fc" id="L67">        compareStringAndNumber(&quot; -2.7i -16&quot;, -16, -2.7);</span>
+<span class="fc" id="L68">        compareStringAndNumber(&quot;-i&quot;, 0, -1);</span>
+<span class="fc" id="L69">        compareStringAndNumber(&quot;-1.2e-3i+10e15&quot;, 10e15, -1.2e-3);</span>
+<span class="fc" id="L70">    }</span>
+
+    @Test (expected = IllegalArgumentException.class)
+    public void checkParsingEmptyString() {
+<span class="nc" id="L74">        ComplexNumber.parse(&quot;&quot;);</span>
+<span class="nc" id="L75">        ComplexNumber.parse(&quot;   &quot;);</span>
+<span class="nc" id="L76">    }</span>
+
+    @Test (expected = ComplexNumberParserException.class)
+    public void tryPassTwoRealPartsToParser() {
+<span class="nc" id="L80">        ComplexNumber.parse(&quot;5.2-7&quot;);</span>
+<span class="nc" id="L81">    }</span>
+
+    @Test (expected = ComplexNumberParserException.class)
+    public void tryPassTwoImaginaryPartsToParser() {
+<span class="nc" id="L85">        ComplexNumber.parse(&quot;i+5.2i&quot;);</span>
+<span class="nc" id="L86">    }</span>
+
+
+    private void compareStringAndNumber(String string, double realPart, double imaginaryPart) {
+<span class="fc" id="L90">        ComplexNumber z = ComplexNumber.parse(string);</span>
+<span class="fc" id="L91">        Assert.assertEquals(realPart, z.getReal(), EPSILON);</span>
+<span class="fc" id="L92">        Assert.assertEquals(imaginaryPart, z.getImaginary(), EPSILON);</span>
+<span class="fc" id="L93">    }</span>
+
+    @Test
+    public void checkToString() {
+<span class="fc" id="L97">        checkToString(2.7, 7.12);</span>
+<span class="fc" id="L98">        checkToString(12, 0);</span>
+<span class="fc" id="L99">        checkToString(0, 5);</span>
+<span class="fc" id="L100">        checkToString(0, -5);</span>
+<span class="fc" id="L101">        checkToString(5, 1);</span>
+<span class="fc" id="L102">    }</span>
+
+    private void checkToString(double realPart, double imaginaryPart) {
+<span class="fc" id="L105">        ComplexNumber z = new ComplexNumber(realPart,imaginaryPart);</span>
+<span class="fc" id="L106">        ComplexNumber w = ComplexNumber.parse(z.toString());</span>
+<span class="fc" id="L107">        Assert.assertEquals(w.getReal(), z.getReal(), EPSILON);</span>
+<span class="fc" id="L108">        Assert.assertEquals(w.getImaginary(), z.getImaginary(), EPSILON);</span>
+<span class="fc" id="L109">    }</span>
+
+<span class="fc" id="L111">    private static final ComplexNumber z1 = new ComplexNumber(1.2, 3.4);</span>
+<span class="fc" id="L112">    private static final ComplexNumber z2 = new ComplexNumber(5.6, 7.8);</span>
+<span class="fc" id="L113">    private static final ComplexNumber z3 = new ComplexNumber(1, 2);</span>
+<span class="fc" id="L114">    private static final ComplexNumber z4 = new ComplexNumber(3, -4);</span>
+<span class="fc" id="L115">    private static final ComplexNumber z5 = new ComplexNumber(0, 0);</span>
+
+    @Test
+    public void checkAdd(){
+<span class="fc" id="L119">        checkComplexNumber(6.8, 11.2, z1.add(z2));</span>
+<span class="fc" id="L120">    }</span>
+
+    @Test
+    public void checkSub(){
+<span class="fc" id="L124">        checkComplexNumber(-4.4, -4.4, z1.sub(z2));</span>
+<span class="fc" id="L125">    }</span>
+
+    @Test
+    public void checkMul(){
+<span class="fc" id="L129">        checkComplexNumber(-19.8, 28.4, z1.mul(z2));</span>
+<span class="fc" id="L130">    }</span>
+
+    @Test
+    public void checkDiv(){
+<span class="fc" id="L134">        checkComplexNumber(-0.2, 0.4, z3.div(z4));</span>
+<span class="fc" id="L135">    }</span>
+
+    @Test(expected = IllegalArgumentException.class)
+    public void checkDivisionByZero() {
+<span class="nc" id="L139">        z1.div(z5);</span>
+<span class="nc" id="L140">    }</span>
+
+    @Test
+    public void checkPower() {
+<span class="fc" id="L144">        checkComplexNumber(-11, -2, z3.power(3));</span>
+<span class="fc" id="L145">    }</span>
+
+    @Test(expected = IllegalArgumentException.class)
+    public void checkNonPositiveDegreeOfPower() {
+<span class="nc" id="L149">        z1.power(-5);</span>
+<span class="nc" id="L150">    }</span>
+
+    @Test
+    public void checkRoots() {
+<span class="fc" id="L154">        ComplexNumber[] roots = new ComplexNumber[] {</span>
+                new ComplexNumber(2, 0),
+<span class="fc" id="L156">                new ComplexNumber(-1, Math.sqrt(3)),</span>
+<span class="fc" id="L157">                new ComplexNumber(-1, -Math.sqrt(3))</span>
+        };
+<span class="fc" id="L159">        ComplexNumber z = new ComplexNumber(8, 0);</span>
+<span class="fc" id="L160">        ComplexNumber[] calculatedRoots = z.root(3);</span>
+
+<span class="fc bfc" id="L162" title="All 2 branches covered.">        for(int i = 0; i &lt; calculatedRoots.length; i++) {</span>
+<span class="fc" id="L163">            checkComplexNumber(roots[i], calculatedRoots[i]);</span>
+        }
+<span class="fc" id="L165">    }</span>
+
+    private void checkComplexNumber(ComplexNumber expected, ComplexNumber calculated) {
+<span class="fc" id="L168">        Assert.assertEquals(expected.getReal(), calculated.getReal(), EPSILON);</span>
+<span class="fc" id="L169">        Assert.assertEquals(expected.getImaginary(), calculated.getImaginary(), EPSILON);</span>
+<span class="fc" id="L170">    }</span>
+
+    @Test(expected = IllegalArgumentException.class)
+    public void checkNegativeDegreeOfRoot() {
+<span class="nc" id="L174">        z1.root(-5);</span>
+<span class="nc" id="L175">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.4.201502262128</span></div></body></html>

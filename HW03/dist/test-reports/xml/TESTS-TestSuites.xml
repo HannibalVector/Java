@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Lennard" id="0" name="CStringTest" package="hr.fer.zemris.java.tecaj.hw3" skipped="0" tests="23" time="0.11" timestamp="2015-04-01T16:53:26">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="ant.file.HW03-0177035204" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build.xml" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="dist" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes" />
+
+          <property name="TODAY" value="April 1 2015" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/idea-IC-139.1117.1/lib/ant" />
+
+          <property name="java.runtime.version" value="1.8.0_40-b25" />
+
+          <property name="user.name" value="ilijan" />
+
+          <property name="src.java" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src/main/java" />
+
+          <property name="user.language" value="en" />
+
+          <property name="build" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64" />
+
+          <property name="ant.project.default-target" value="jar" />
+
+          <property name="ant.project.name" value="HW03-0177035204" />
+
+          <property name="DSTAMP" value="20150401" />
+
+          <property name="java.version" value="1.8.0_40" />
+
+          <property name="user.timezone" value="Europe/Zagreb" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="ant.file.type.HW03-0177035204" value="file" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="jacoco.home" value="/home/ilijan/faks/Java/Tools/jacoco-0.7.4" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="src" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build.xml" />
+
+          <property name="os.version" value="3.2.0-77-generic" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.40-b25" />
+
+          <property name="ant.library.dir" value="/usr/local/idea-IC-139.1117.1/lib/ant/lib" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="_jacoco.agentFile" value="/tmp/jacocoagent254822893223713970.jar" />
+
+          <property name="xalan.home" value="/home/ilijan/faks/Java/Tools/xalan-j_2_7_1" />
+
+          <property name="user.home" value="/home/ilijan" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/local/idea-IC-139.1117.1/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junittestcases8895193757795133288.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist/test-reports/xml/IGNORETHIS.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist/test-reports/xml/IGNORETHIS.xml crashfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junitvmwatcher7262885886517034685.properties propsfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junit4462857616925841958.properties" />
+
+          <property name="java.class.path" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/classes:/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/test:/home/ilijan/faks/Java/Tools/junit-4.12/hamcrest-core-1.3.jar:/home/ilijan/faks/Java/Tools/junit-4.12/junit-4.12.jar:/usr/local/idea-IC-139.1117.1/lib/bootstrap.jar:/usr/local/idea-IC-139.1117.1/lib/extensions.jar:/usr/local/idea-IC-139.1117.1/lib/util.jar:/usr/local/idea-IC-139.1117.1/lib/jdom.jar:/usr/local/idea-IC-139.1117.1/lib/log4j.jar:/usr/local/idea-IC-139.1117.1/lib/trove4j.jar:/usr/local/idea-IC-139.1117.1/lib/jna.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-launcher.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-junit.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-junit4.jar:/tmp/jacocoagent254822893223713970.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+
+          <property name="TSTAMP" value="1853" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="build.classes" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/classes" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="src.test" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src/test/java" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="pmd.home" value="/home/ilijan/faks/Java/Tools/pmd-bin-5.2.3" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="user.dir" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204" />
+
+          <property name="junit.home" value="/home/ilijan/faks/Java/Tools/junit-4.12" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="build.test" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/test" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="run-tests" />
+
+      </properties>
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testLeftTooLargeNumberOfCharacters" time="0.008" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testEndsWith" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testLeftNegativeNumberOfCharacters" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testAdd" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testWrongOffsetAndLength" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testRight" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testLeft" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testSubstringEndSmallerThanStart" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testConstructorFromCString" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testContains" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testToCharArray" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testConstructorFromArray" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testConstructorFromString" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testCharAtNegativeIndex" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testCharAtTooBigIndex" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testSubstringNegativeStart" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testCharAt" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testLength" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testSubstringTooLargeEnd" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testIndexOf" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testReplaceAllStrings" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testStartsWith" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.CStringTest" name="testReplaceAllChars" time="0.0" />
+
+      <system-out><![CDATA[neki
+]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+  <testsuite errors="0" failures="0" hostname="Lennard" id="1" name="ComplexNumberTest" package="hr.fer.zemris.java.tecaj.hw3" skipped="0" tests="21" time="0.028" timestamp="2015-04-01T16:53:26">
+      <properties>
+          <property name="java.vendor" value="Oracle Corporation" />
+
+          <property name="ant.file.HW03-0177035204" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build.xml" />
+
+          <property name="sun.java.launcher" value="SUN_STANDARD" />
+
+          <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+
+          <property name="dist" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist" />
+
+          <property name="os.name" value="Linux" />
+
+          <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes" />
+
+          <property name="TODAY" value="April 1 2015" />
+
+          <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+
+          <property name="ant.home" value="/usr/local/idea-IC-139.1117.1/lib/ant" />
+
+          <property name="java.runtime.version" value="1.8.0_40-b25" />
+
+          <property name="user.name" value="ilijan" />
+
+          <property name="src.java" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src/main/java" />
+
+          <property name="user.language" value="en" />
+
+          <property name="build" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build" />
+
+          <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64" />
+
+          <property name="ant.project.default-target" value="jar" />
+
+          <property name="ant.project.name" value="HW03-0177035204" />
+
+          <property name="DSTAMP" value="20150401" />
+
+          <property name="java.version" value="1.8.0_40" />
+
+          <property name="user.timezone" value="Europe/Zagreb" />
+
+          <property name="sun.arch.data.model" value="64" />
+
+          <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed" />
+
+          <property name="sun.cpu.isalist" value="" />
+
+          <property name="ant.file.type.HW03-0177035204" value="file" />
+
+          <property name="sun.jnu.encoding" value="UTF-8" />
+
+          <property name="file.encoding.pkg" value="sun.io" />
+
+          <property name="file.separator" value="/" />
+
+          <property name="java.specification.name" value="Java Platform API Specification" />
+
+          <property name="jacoco.home" value="/home/ilijan/faks/Java/Tools/jacoco-0.7.4" />
+
+          <property name="java.class.version" value="52.0" />
+
+          <property name="src" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src" />
+
+          <property name="user.country" value="US" />
+
+          <property name="java.home" value="/usr/lib/jvm/java-8-oracle/jre" />
+
+          <property name="java.vm.info" value="mixed mode" />
+
+          <property name="ant.file" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build.xml" />
+
+          <property name="os.version" value="3.2.0-77-generic" />
+
+          <property name="path.separator" value=":" />
+
+          <property name="java.vm.version" value="25.40-b25" />
+
+          <property name="ant.library.dir" value="/usr/local/idea-IC-139.1117.1/lib/ant/lib" />
+
+          <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+
+          <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+
+          <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+
+          <property name="_jacoco.agentFile" value="/tmp/jacocoagent254822893223713970.jar" />
+
+          <property name="xalan.home" value="/home/ilijan/faks/Java/Tools/xalan-j_2_7_1" />
+
+          <property name="user.home" value="/home/ilijan" />
+
+          <property name="java.specification.vendor" value="Oracle Corporation" />
+
+          <property name="java.library.path" value="/usr/local/idea-IC-139.1117.1/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+
+          <property name="java.vendor.url" value="http://java.oracle.com/" />
+
+          <property name="java.vm.vendor" value="Oracle Corporation" />
+
+          <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner testsfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junittestcases8895193757795133288.properties skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter,/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist/test-reports/xml/IGNORETHIS.txt formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/dist/test-reports/xml/IGNORETHIS.xml crashfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junitvmwatcher7262885886517034685.properties propsfile=/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/junit4462857616925841958.properties" />
+
+          <property name="java.class.path" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/classes:/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/test:/home/ilijan/faks/Java/Tools/junit-4.12/hamcrest-core-1.3.jar:/home/ilijan/faks/Java/Tools/junit-4.12/junit-4.12.jar:/usr/local/idea-IC-139.1117.1/lib/bootstrap.jar:/usr/local/idea-IC-139.1117.1/lib/extensions.jar:/usr/local/idea-IC-139.1117.1/lib/util.jar:/usr/local/idea-IC-139.1117.1/lib/jdom.jar:/usr/local/idea-IC-139.1117.1/lib/log4j.jar:/usr/local/idea-IC-139.1117.1/lib/trove4j.jar:/usr/local/idea-IC-139.1117.1/lib/jna.jar:/usr/lib/jvm/java-8-oracle/lib/tools.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-launcher.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-junit.jar:/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant-junit4.jar:/tmp/jacocoagent254822893223713970.jar" />
+
+          <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+
+          <property name="TSTAMP" value="1853" />
+
+          <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+
+          <property name="ant.file.type" value="file" />
+
+          <property name="java.vm.specification.version" value="1.8" />
+
+          <property name="build.classes" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/classes" />
+
+          <property name="sun.cpu.endian" value="little" />
+
+          <property name="sun.os.patch.level" value="unknown" />
+
+          <property name="src.test" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/src/test/java" />
+
+          <property name="java.io.tmpdir" value="/tmp" />
+
+          <property name="pmd.home" value="/home/ilijan/faks/Java/Tools/pmd-bin-5.2.3" />
+
+          <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+
+          <property name="os.arch" value="amd64" />
+
+          <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+
+          <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+
+          <property name="user.dir" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204" />
+
+          <property name="line.separator" value="&#xa;" />
+
+          <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+
+          <property name="basedir" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204" />
+
+          <property name="junit.home" value="/home/ilijan/faks/Java/Tools/junit-4.12" />
+
+          <property name="ant.java.version" value="1.8" />
+
+          <property name="ant.core.lib" value="/usr/local/idea-IC-139.1117.1/lib/ant/lib/ant.jar" />
+
+          <property name="file.encoding" value="UTF-8" />
+
+          <property name="build.test" value="/home/ilijan/faks/Java/domace zadace Idea/HW03-0177035204/build/test" />
+
+          <property name="java.specification.version" value="1.8" />
+
+          <property name="ant.project.invoked-targets" value="run-tests" />
+
+      </properties>
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkParsingEmptyString" time="0.004" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkNonPositiveDegreeOfPower" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="tryPassTwoRealPartsToParser" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkAngle" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkPower" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkRoots" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkFactoryFromImaginary" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkMagnitude" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkToString" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkParser" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="tryPassTwoImaginaryPartsToParser" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkFactoryFromReal" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkNegativeDegreeOfRoot" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkImaginaryPart" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkDivisionByZero" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkFactoryFromMagnitudeAndAngle" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkAdd" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkDiv" time="0.001" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkMul" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkSub" time="0.0" />
+
+      <testcase classname="hr.fer.zemris.java.tecaj.hw3.ComplexNumberTest" name="checkRealPart" time="0.0" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[]]></system-err>
+
+  </testsuite>
+</testsuites>
