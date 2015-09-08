@@ -1,0 +1,152 @@
+h1 {
+    font-family: "Georgia";
+    font-style: italic;
+}
+
+body {
+    margin: 0px;
+}
+
+div.contents {
+    width: 600px;
+    margin: auto;
+    font-family: "Arial";
+    text-alignment: center;
+    background: white;
+    padding: 20px;
+    padding-top:50px;
+}
+
+div.contents textarea, input {
+    width: 100%;
+}
+
+form.login input {
+    width: 24%;
+}
+
+div.header {
+    margin: 0px;
+    height: 25px;
+    padding-top: 5px;
+    color: white;
+    font-family: "Arial";
+    background: black;
+    position: fixed;
+    width:100%;
+
+    font-size 10px;
+}
+
+div.header a {
+    color: white;
+    font-style: normal;
+    font-family:"Arial";
+}
+
+div.login p {
+    text-align:center;
+}
+
+div.text {
+    text-align: justify;
+    font-family: "Georgia";
+    line-height: 150%;
+}
+
+div.commentBody {
+    text-indent: 20px;
+}
+
+div.comment {
+    border-top: solid 1px black;
+    margin-bottom: 20px;
+}
+
+div.comment:first-child {
+    border: none;
+}
+
+a.home {
+    margin: 0 20px 0 20px;
+}
+
+h2 {
+    color: white;
+    background: black;
+    font-family: "Courier New";
+    font-size: 18px;
+    padding: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+
+th {
+    background: black;
+    color: white;
+    font-style: italic;
+}
+
+th, td {
+    padding: 5px 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr:hover {
+    background: #DDF920;
+}
+
+ul.opcije {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ol.ankete {
+    color: black;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-style: italic;
+    list-style-position: inside;
+    padding: 0px;
+}
+
+ul.opcije li, ol.ankete li {
+    color: white;
+}
+
+ul.opcije li:hover, ol.ankete li:hover {
+    color: black;
+}
+
+ol.ankete li a, ul.opcije li {
+    margin: 5px 0px;
+    padding: 5px;
+    display: block;
+    color: white;
+    background: black;
+    text-decoration: none;
+}
+
+ol.ankete li a:hover, ul.opcije li:hover {
+    color: black;
+    background: #DDF920;
+}
+
+a {
+    color: black;
+    font-family: "Georgia";
+    font-weight: bold;
+    font-style: italic;
+}
+
+ul {
+    list-style-type: square;
+}
+
+html {
+    background: #2c4860;
+}
